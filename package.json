@@ -1,0 +1,24 @@
+{
+  "name": "angularjs_task-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-to-js": "0.0.1",
+    "gulp-minify-html": "^1.0.5",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/alexander_milovanov/angularjs_task-6.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

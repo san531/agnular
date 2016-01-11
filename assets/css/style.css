@@ -1,0 +1,93 @@
+.form-control--medium {
+    width: 400px;
+}
+
+.footer {
+    text-align: center;
+}
+.container--main {
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.section__header,
+.section__time,
+.section__date {
+    display: inline;
+}
+
+.section__date {
+    font-size: 30px;
+}
+
+.section__time {
+     font-size: 20px;
+     padding-left: 50px;
+
+}
+
+.section {
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 20px;
+    background-color: azure;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section__main-info {
+    position: relative;
+    text-align: justify;
+    text-align-last: justify;
+  }
+
+.section__main-info::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+.bottom-align-text-right {
+    text-align: right;
+  }
+
+.line {
+    display: inline-block;
+    text-align: left;
+}
+
+.page-header {
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 3em;
+    margin: auto;
+}
+
+.search {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+ .ng-invalid.ng-dirty {
+    border-color: red;
+}
+
+ .ng-valid.ng-dirty {
+    border-color: green;
+}
+
+.login-header {
+    margin-top: 0;
+}
+.form-control-static-float{
+    float: left;
+    width: 50%;
+}
+

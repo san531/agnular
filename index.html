@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body ng-controller="appController">
+    <div class="container">
+        <header class="page-header row">
+            <img src="assets/img/angularjs-logo.png" alt="AngularJS">
+            <ol class="breadcrumb line" ng-show="!coursesHidden">
+                <li><a href="#/courses"ng-show="!currentCouseHidden">Курсы</a><span ng-show="currentCouseHidden">Курсы</span></li>
+                <li class="disabled" ng-show="!currentCouseHidden">{{currentCouse}}</li>
+            </ol>
+            <div class="pull-right login" ng-show="login">
+                <h2 style="text-align:center" class="login-header"><span class="label label-default">{{login}}</span></h2>
+                <a class="btn btn-link" href="#/">Log off</a>
+            </div>
+        </header>
+    </div>
+
+   
+    <main class="container container--main" ng-view> </main>
+    
+   
+    <footer class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text">Copyright 2015</p>
+            
+        </div>
+    </footer>
+    
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Внимание !!!</h3>
+        </div>
+        <div class="modal-body">
+            <span>Одно из полей заполнено некорректно</span>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        </div>
+    </script>
+    
+    <script type="text/ng-template" id="myModalContent1.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Вы нажали кнопку удалить курс</h3>
+        </div>
+        <div class="modal-body">
+            <span>Действительно удалить выбранный курс?</span>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">Удалить</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Отмена</button>
+        </div>
+    </script>
+<!--    <script src="build/views.js"></script>-->
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-mocke2e-maydelay/angular-mocke2e-maydelay.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+
+<!--
+    <script src="app/app.module.js"></script>
+    <script src="app/shared/shared.module.js"></script>
+    <script src="app/components/components.module.js"></script>
+    <script src="app/components/courses/courses.module.js"></script>
+    <script src="app/components/currentCourse/currentCourse.module.js"></script>
+    <script src="app/components/login/login.module.js"></script>
+    <script src="app/shared/timeFilter.js"></script>
+    <script src="app/shared/timeDirective.js"></script>
+    <script src="app/shared/dateDirective.js"></script>
+    <script src="app/shared/selectValidationDirective.js"></script>
+    <script src="app/shared/modal/modalController.js"></script>
+    <script src="app/shared/modal/modalController1.js"></script>
+   
+    <script src="app/appController.js"></script>
+    <script src="app/components/courses/coursesController.js"></script>
+    <script src="app/components/currentCourse/currentCourseController.js"></script>
+    <script src="app/components/login/loginController.js"></script>
+
+    <script src="app/shared/resourceService.js"></script>
+    <script src="app/shared/modelService.js"></script>
+    <script src="app/shared/randomIdService.js"></script>
+-->
+
+<!--    <script src="app/app.config.js"></script>-->
+    
+    <script src="build/views.js"></script>
+    
+</body>
+</html>

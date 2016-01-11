@@ -1,0 +1,27 @@
+{
+  "name": "Alexander",
+  "authors": [
+    "Alex Milovanov <89537310001@bk.ru>"
+  ],
+  "description": "task6",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "angular-route": "~1.4.8",
+    "angular-mocks": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-mocke2e-maydelay": "~1.0.0",
+    "angular-bootstrap": "~0.14.3",
+    "angular-animate": "~1.4.8"
+  }
+}
